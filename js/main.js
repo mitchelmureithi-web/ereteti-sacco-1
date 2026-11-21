@@ -1,5 +1,5 @@
-const litres = document.querySelector('.litres');
-const litresMessage = document.querySelector('.litres-message');
+const litres = document.querySelector('#litres');
+const litresMessage = document.querySelector('#litres-message');
 
 console.log(litres);
 console.log(litresMessage);
@@ -100,8 +100,8 @@ if (totalCell) {
     let total = 0;
     for (const row of rows) {
         const cells = row.querySelectorAll('td');
-        if (cells[3].textContent === 'Yes') {
-            total = total + Number(cells[4].textContent);
+        if (cells.length === 5 && cells[4].textContent.trim() === 'Yes') {
+            total = total + Number(cells[3].textContent);
         }
     }
     totalCell.textContent = total.toFixed(2);

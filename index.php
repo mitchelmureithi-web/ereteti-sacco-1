@@ -31,4 +31,4 @@ include 'includes/header.php';
     </section>
   </main>
 
-<?php include 'includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>g

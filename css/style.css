@@ -106,3 +106,173 @@ margin: 0.25rem 0 0.75rem;
 input.invalid {
 border: 2px solid #B3261E;
 }
+
+.deliveries-page {
+    min-width: 0;
+}
+
+.delivery-count {
+    margin: 0 0 0.25rem;
+    font-size: 1.15rem;
+}
+
+.delivery-date {
+    margin: 0 0 1rem;
+    color: #4f5b57;
+}
+
+.deliveries-page h2 {
+    margin: 1.5rem 0 0.75rem;
+    border-bottom: 2px solid #d8a22b;
+    padding-bottom: 0.35rem;
+}
+
+#delivery-form {
+    display: grid;
+    grid-template-columns: minmax(8rem, 1fr) minmax(8rem, 1fr);
+    gap: 0.5rem 1.5rem;
+    align-items: start;
+    max-width: 50rem;
+    margin-bottom: 1.5rem;
+}
+
+#delivery-form label {
+    margin-top: 0.35rem;
+}
+
+#delivery-form input,
+#delivery-form select {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid #d8d3c5;
+    border-radius: 0.25rem;
+    background: #fff;
+    color: #262626;
+    font: inherit;
+}
+
+#delivery-form button {
+    grid-column: 1 / -1;
+    width: fit-content;
+    min-height: 2.75rem;
+    padding: 0.55rem 1.1rem;
+    border: 0;
+    border-radius: 0.25rem;
+    background: #1f6f3e;
+    color: #f7f3e8;
+    font: inherit;
+    cursor: pointer;
+}
+
+#delivery-form .message,
+#delivery-form #form-message {
+    grid-column: 1 / -1;
+}
+
+.table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.table-scroll table {
+    width: 100%;
+    min-width: 38rem;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: #f7f3e8;
+    border: 1px solid #d8d3c5;
+}
+
+.table-scroll .member-column {
+    width: 20%;
+}
+
+.table-scroll .farmer-column {
+    width: 20%;
+}
+
+.table-scroll .session-column {
+    width: 20%;
+}
+
+.table-scroll .litres-column {
+    width: 20%;
+}
+
+.table-scroll .accepted-column {
+    width: 20%;
+}
+
+.table-scroll caption {
+    text-align: left;
+    margin: 0 0 0.5rem;
+    color: #4f5b57;
+}
+
+.table-scroll th,
+.table-scroll td {
+    padding: 0.75rem 0.9rem;
+    border-bottom: 1px solid #e5e1d6;
+    text-align: left;
+    vertical-align: middle;
+    overflow-wrap: anywhere;
+}
+
+.table-scroll thead th {
+    background: #1f6f3e;
+    color: #f7f3e8;
+    border-bottom: 0;
+    height: 3rem;
+    font-weight: 700;
+}
+
+.table-scroll tbody tr:nth-child(even) {
+    background: #fbf9f2;
+}
+
+.table-scroll tbody tr {
+    height: 3rem;
+}
+
+.table-scroll tbody td {
+    background: transparent;
+}
+
+.table-scroll td.no {
+    color: #b3261e;
+}
+
+.table-scroll tfoot {
+    background: #eee7d5;
+    font-weight: 700;
+}
+
+.table-scroll tfoot th,
+.table-scroll tfoot td {
+    border-bottom: 0;
+    height: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.table-scroll tfoot td {
+    text-align: right;
+}
+
+@media (max-width: 700px) {
+    #delivery-form {
+        grid-template-columns: 1fr;
+    }
+
+    #delivery-form button,
+    #delivery-form .message,
+    #delivery-form #form-message {
+        grid-column: 1;
+    }
+
+    .table-scroll table {
+        min-width: 38rem;
+    }
+}
