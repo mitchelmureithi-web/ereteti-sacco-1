@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Contact us - Ereteti Dairy Sacco</title>
-</head>
-<body>
-<header>
-<h1>Contact Ereteti Dairy Sacco</h1>
-</header>
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="routes.html">Our routes</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
+<?php
+$page_title = 'Contact us';
+include 'includes/header.php';
+?>
 <main>
     <section>
 <h2>How To Reach Us</h2>
@@ -35,9 +21,4 @@ PO Box 4021<br>
 Ngong, Kajiado County
     </address> 
 </main>
-<footer>
-<p>Ereteti Dairy Sacco, PO Box 4021, Ngong.</p>
-<p>Site built by Wanjiru Kamau, DBT Year 1, 2026.</p>
-</footer>
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>
