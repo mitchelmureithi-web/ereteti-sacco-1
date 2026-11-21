@@ -49,3 +49,9 @@ include 'includes/header.php';
   </form>
 </main>
 <?php include 'includes/footer.php'; ?>
+
+<!-- echo '<ul>';
+foreach ($_POST as $field => $value) {
+echo '<li>' . $field . ': ' . $value . '</li>';
+}
+echo '</ul>'; -->
