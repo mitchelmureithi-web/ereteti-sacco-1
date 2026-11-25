@@ -173,7 +173,7 @@ border: 2px solid #B3261E;
 .table-scroll {
     width: 100%;
     overflow-x: auto;
-    margin-top: 1rem;
+    margin: 1rem 0 0;
 }
 
 .table-scroll table {
@@ -181,8 +181,8 @@ border: 2px solid #B3261E;
     min-width: 38rem;
     border-collapse: collapse;
     table-layout: fixed;
-    background: #f7f3e8;
-    border: 1px solid #d8d3c5;
+    background: #fff;
+    border: 0;
 }
 
 .table-scroll .member-column {
@@ -206,15 +206,14 @@ border: 2px solid #B3261E;
 }
 
 .table-scroll caption {
-    text-align: left;
-    margin: 0 0 0.5rem;
-    color: #4f5b57;
+    display: none;
 }
 
 .table-scroll th,
 .table-scroll td {
-    padding: 0.75rem 0.9rem;
-    border-bottom: 1px solid #e5e1d6;
+    height: 2.35rem;
+    padding: 0.45rem 0.9rem;
+    border: 0;
     text-align: left;
     vertical-align: middle;
     overflow-wrap: anywhere;
@@ -223,17 +222,16 @@ border: 2px solid #B3261E;
 .table-scroll thead th {
     background: #1f6f3e;
     color: #f7f3e8;
-    border-bottom: 0;
-    height: 3rem;
+    height: 2.25rem;
     font-weight: 700;
 }
 
 .table-scroll tbody tr:nth-child(even) {
-    background: #fbf9f2;
+    background: #fff;
 }
 
 .table-scroll tbody tr {
-    height: 3rem;
+    height: 2.35rem;
 }
 
 .table-scroll tbody td {
@@ -252,9 +250,9 @@ border: 2px solid #B3261E;
 .table-scroll tfoot th,
 .table-scroll tfoot td {
     border-bottom: 0;
-    height: 3rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    height: 2.5rem;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
 }
 
 .table-scroll tfoot td {

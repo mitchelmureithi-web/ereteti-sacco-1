@@ -52,19 +52,17 @@ const deliveryForm = document.querySelector('#delivery-form');
 const formMessage = document.querySelector('#form-message');
 
 function recordDelivery(event) {
-    event.preventDefault();
     checkMember();
     checkLitres();
 
     if (member.classList.contains('invalid')) {
+        event.preventDefault(); // stop: the member number is wrong
         member.focus();
     } else if (litres.classList.contains('invalid')) {
+        event.preventDefault(); // stop: the litres are wrong
         litres.focus();
-    } else {
-        formMessage.textContent = 'Checked: ' + member.value + ', ' +
-            litres.value + ' litres. Nothing is sent yet: ' +
-            'that needs a server.';
     }
+// nothing wrong: the form goes on to process-delivery.php
 }
 
 if (deliveryForm) {
@@ -100,7 +98,7 @@ if (totalCell) {
     let total = 0;
     for (const row of rows) {
         const cells = row.querySelectorAll('td');
-        if (cells.length === 5 && cells[4].textContent.trim() === 'Yes') {
+        if (cells.length > 4 && cells[4].textContent.trim() === 'Yes') {
             total = total + Number(cells[3].textContent);
         }
     }
